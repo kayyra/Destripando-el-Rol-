@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="robots" content=" noindex, nofollow">
+    <title>¡Destripando el Rol</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@100&family=Raleway:wght@300&display=swap"
+        rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <script src="https://kit.fontawesome.com/a53b324b22.js" crossorigin="anonymous"></script>
+    <!-- Mis estilos -->
+    <link rel="stylesheet" href="css/menu-style.css">
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="logo">
+                <img src="img/logo.png" alt="">
+            </div>
+            <div class="icono" id="icono">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+            <div class="enlaces close" id="enlaces">
+                <a href="index.html">Inicio</a>
+                <a href="acercade.html">Acerca de</a>
+                <a href="blog.html">Blog</a>
+                <a href="#">Contacto</a>
+            </div>
+        </nav>
+    </header>
+    <!-- Cuerpo de la página -->
+    <main>
+        <!-- Banner -->
+        <section id="banner">
+            <img src="img/header.jpg" alt="">
+            <div class="contenedor">
+                <h2>Softcombat,ReV y más</h2>
+                <h3>Si has disfrutado de lo que has leído</h3>
+                <p>No dudes en ponerte en contacto con nosotros más abajo.</p>
+            </div>
+        </section>
+
+        <section id="bienvenidos">
+            <h2>Bienvenidos a Destripando el rol</h2>
+            <p>Pasa, siéntate, relájate y disfruta</p>
+        </section>
+        <!-- /Banner -->
+
+
+        <div id="container-form">
+            <form action="proceso.php" method="post" name="formulario1" id="formulario1">
+                <section id="mapa">
+                    <h3>¿Dónde nos encontramos?</h3>
+                    <iframe
+                        src="https://www.openstreetmap.org/export/embed.html?bbox=2.1318170428276066%2C41.415919126735474%2C2.135357558727265%2C41.417693211785334&amp;layer=mapnik&amp;marker=41.41680617531763%2C2.1335873007774353"
+                        style="border: 1px solid black"></iframe>
+                </section>
+                <h3>Contacta con nosotros</h3>
+                <!-- Campo para el nombre -->
+                <fieldset id="campo_nombre">
+                    <label for="nombre" class="etiqueta_entrada">Nombre</label>
+                    <div class="entrada_campo">
+                        <input type="text" name="nombre" id="nombre" class="dato_entrada" autocomplete="off">
+                        <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                    </div>
+                    <p class="dato_entrada_error">Introduzca un nombre válido</p>
+                </fieldset>
+
+                <!-- Campo para el apellido -->
+                <fieldset id="campo_apellidos">
+                    <label for="apellidos" class="etiqueta_entrada">Apellidos</label>
+                    <div class="entrada_campo">
+                        <input type="text" name="apellidos" id="apellidos" class="dato_entrada" autocomplete="off">
+                        <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                    </div>
+                    <p class="dato_entrada_error">Introduzca unos apellidos válido</p>
+                </fieldset>
+
+                <!-- Campo para el Correo Electrónico -->
+                <fieldset id="campo_correo">
+                    <label for="correo" class="etiqueta_entrada">Correo</label>
+                    <div class="entrada_campo">
+                        <input type="email" name="correo" id="correo" class="dato_entrada" autocomplete="off">
+                        <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                    </div>
+                    <p class="dato_entrada_error">Introduzca un correo electrónico válido</p>
+                </fieldset>
+
+                <!-- Campo para el teléfono -->
+                <fieldset id="campo_telefono">
+                    <label for="telefono" class="etiqueta_entrada">Teléfono</label>
+                    <div class="entrada_campo">
+                        <input type="tel" name="telefono" id="telefono" class="dato_entrada" autocomplete="off">
+                        <i class="estado_validacion fa-solid fa-circle-xmark fa-lg"></i>
+                    </div>
+                    <p class="dato_entrada_error">Introduzca un teléfono válido</p>
+                </fieldset>
+                <textarea name="mensaje" id="textarea" cols="30" rows="10"
+                    placeholder="Escriba aquí su mensaje"></textarea>
+
+                <div id="container4">
+                    <a href="#" id="abrir">Política de privacidad</a>
+                    <!--Contenedor ventana modal-->
+                    <div class="modal oculta-modal" id="modal">
+                        <div class="modal-container4">
+
+                            <h2>Política de privacidad</h2>
+
+                            <i class="fa-solid fa-square-xmark" id="cerrar"></i>
+
+                            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+                                Nobis sit porro debitis tempora saepe quam odit illum accusamus officia
+                                mollitia laudantium, iusto corporis eaque quisquam corrupti.
+                                A itaque praesentium suscipit. Lorem ipsum dolor sit amet consectetur
+                                adipisicing elit.
+                                Sapiente, aperiam maiores. Ducimus eos minus itaque harum voluptatibus
+                                doloremque.
+                                Modi quasi unde ullam in nostrum adipisci eos quibusdam perferendis ipsam
+                                omnis.</p>
+
+                        </div>
+                    </div>
+                    <fieldset id="campo_terminos">
+                        <label for="terminos" class="etiqueta_entrada">
+                            <input type="checkbox" name="terminos" id="terminos" class="terminos_checkbox">
+                            Acepto las condiciones y términos de la política de privacidad
+                        </label>
+                    </fieldset>
+
+                    <!-- Mensaje de error -->
+                    <div class="mensaje_error" id="mensaje_error">
+                        <p><i class="fa-solid fa-triangle-exclamation"></i>&nbsp;<b>Revise los datos
+                                introducidos</b></p>
+                    </div>
+
+                    <!-- Botón de enviar y mensaje de éxito -->
+                    <div class="campo_btn_enviar">
+                        <input type="submit" value="Enviar Formulario" class="btn_envio">
+                        <p class="mensaje_exito" id="mensaje_exito">Mensaje enviado con éxito</p>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </main>
+    <footer>
+        <div class="contenedor">
+            <p id="texto">Ana Rodríguez Pérez &copy; | Confección y Publicación de Páginas Web - CIFO La Violeta
+                Curso 2021/2022 </p>
+            <div class="sociales">
+                <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                <a href="#"><i class="fa-brands fa-linkedin-in"></i></a>
+            </div>
+        </div>
+    </footer>
+    <!-- /Pie de la página -->
+
+    <!-- Mis scripts -->
+    <script src="js/menu-js.js"></script>
+</body>
+
+</html>
